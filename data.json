@@ -1,0 +1,33 @@
+{
+    "RequestedInputDay": "2023-11-10",
+    "InterestingFacts": [
+      {
+        "Year": 1975,
+        "Description": "The 729-foot-long freighter SS Edmund Fitzgerald sinks during a storm on Lake Superior, killing all 29 crew on board."
+      }
+    ],
+    "MotivationalQuotes": [
+      {
+        "Body": "The important thing is not to stop questioning. Curiosity has its own reason for existing.",
+        "Author": "Albert Einstein",
+        "Context": "It was on this day in 1983 that Bill Gates introduced Windows 1.0, reminding us of the potential innovation brought about by questioning and curiosity."
+      }
+    ],
+    "BornToday": [
+      {
+        "Name": "Martin Luther",
+        "BornOnYear": 1483,
+        "KnownFor": "German theologian and seminal figure in the Protestant Reformation",
+        "DiedOn": "1546-02-18"
+      }
+    ],
+    "DiedToday": [
+      {
+        "Name": "Arthur Rimbaud",
+        "DiedOnYear": 1891,
+        "KnownFor": "French poet known for his influence on modern literature and arts",
+        "BornOn": "1854-10-20"
+      }
+    ]
+  }
+  

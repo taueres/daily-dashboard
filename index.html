@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        .no-wrap {
+            white-space: nowrap;
+        }
+
+        .date-header {
+            background-color: #87CEEB;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #4F4F4F;
+            margin-bottom: 10px;
+        }
+
+        .fact-item, .quote-item, .person-item {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        /* Subtle line to separate sections */
+        .section:not(:last-child) {
+            border-bottom: 2px solid #eaeaea;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .section {
+                flex-basis: 46%; /* Adjust this for spacing */
+            }
+
+            /* Remove bottom border in two-column layout */
+            .section:not(:last-child) {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script type="importmap">
+        {
+          "imports": {
+            "react": "https://cdn.skypack.dev/pin/react@v17.0.1-yH0aYV1FOvoIPeKBbHxg/mode=imports,min/optimized/react.js",
+            "react-dom": "https://cdn.skypack.dev/pin/react-dom@v17.0.1-oZ1BXZ5opQ1DbTh7nu9r/mode=imports,min/optimized/react-dom.js",
+            "crypto-js": "https://cdn.skypack.dev/pin/crypto-js@v4.2.0-zrlxegy3yFOPYCCYn41o/mode=imports,min/optimized/crypto-js.js",
+            "openai": "https://cdn.skypack.dev/pin/openai@v4.17.4-C68fZ1cJJU9lC3u9Tfwb/mode=imports,min/optimized/openai.js"
+          }
+        }
+      </script>
+    <div id="root"></div>
+    <script type="module">
+        import React from 'react';
+        import ReactDOM from 'react-dom';
+        import { Dashboard } from './dashboard.js';
+        import './ai.js';
+
+        ReactDOM.render(React.createElement(Dashboard), document.getElementById('root'));
+    </script>
+</body>
+</html>
