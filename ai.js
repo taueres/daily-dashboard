@@ -47,6 +47,10 @@ const inner = async (password, date) => {
     const decrypted = CryptoJS.AES.decrypt(ENCRYPTED, password);
     const apiKey = decrypted.toString(CryptoJS.enc.Utf8);
 
+    if (!apiKey) {
+        throw new Error('ApiKey not available');
+    }
+
     const openai = new OpenAI({
         apiKey,
         dangerouslyAllowBrowser: true

@@ -27,6 +27,11 @@ export const Dashboard = () => {
             password = prompt('Password');
         }
 
+        if (password === null) {
+            setError('Password is required to access the page.');
+            return;
+        }
+
         let response;
         try {
             response = await getAiData(password, getToday());
@@ -42,7 +47,7 @@ export const Dashboard = () => {
     if (error) {
         return x(
             "div",
-            null,
+            { className: 'error-box' },
             'Error: ',
             error
         );
@@ -51,7 +56,15 @@ export const Dashboard = () => {
     if (data === null) {
         return x(
             "div",
-            null,
+            { className: 'loading-box' },
+            x(
+                'img',
+                {
+                    src: './img/loading.svg',
+                    width: '30',
+                    height: '30',
+                }
+            ),
             "Loading..."
         );
     }

@@ -66,6 +66,22 @@
                 border-bottom: none;
             }
         }
+
+        .error-box {
+            background-color: #fd9999;
+            border: 1px solid #df2c2c;
+            margin: 10px;
+            padding: 15px;
+        }
+
+        .loading-box {
+            display: flex;
+            align-items: center;
+            background-color: #a9d3fb;
+            border: 1px solid #2675c4;
+            margin: 10px;
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
@@ -84,7 +100,6 @@
         import React from 'react';
         import ReactDOM from 'react-dom';
         import { Dashboard } from './dashboard.js';
-        import './ai.js';
 
         ReactDOM.render(React.createElement(Dashboard), document.getElementById('root'));
     </script>
