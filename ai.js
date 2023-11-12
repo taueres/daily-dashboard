@@ -63,10 +63,10 @@ const inner = async (password, date) => {
                 "role": "system",
                 "content": `
 Your goal is to fill in the data for a daily dashboard that shows information for the current day. I want these pieces of information:
-1) give me 5 interesting facts that happened with today's date (i.e. day and month) but in the past. Do not include births or deaths of people. Focus on the most influential events;
+1) give me 5 interesting facts that happened on today's date (day and month) but in the past. Do not include births or deaths of people. Focus on the most influential events;
 2) give me 3  motivational quotes to get motivated for the day. It's better if they are contextualized with today's date, especially if they refer to the events of point #1;
-3) give me 4 names of famous people that are born with today's date (i.e. day and month). Give less priority to actors, musicians and similar. Return the most influential people;
-4) give me 4 names of famous people that have died with today's date (i.e. day and month);  Give less priority to actors, musicians and similar. Return the most influential people.
+3) give me 4 names of famous people that are born on today's date (day and month). Give less priority to actors, musicians and similar. Return the most influential people;
+4) give me 4 names of famous people that have died on today's date (day and month).  Give less priority to actors, musicians and similar. Return the most influential people.
 
 If you don't know some of the data that I requested, feel free to return less data.
 
