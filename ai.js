@@ -68,6 +68,8 @@ Your goal is to fill in the data for a daily dashboard that shows information fo
 3) give me 4 names of famous people that are born with today's date (i.e. day and month). Give less priority to actors, musicians and similar. Return the most influential people;
 4) give me 4 names of famous people that have died with today's date (i.e. day and month);  Give less priority to actors, musicians and similar. Return the most influential people.
 
+If you don't know some of the data that I requested, feel free to return less data.
+
 I want the response in JSON. Please output the JSON response ONLY, no other text.
 
 This is an example of the JSON response that you can use to derive the response format:
