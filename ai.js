@@ -45,7 +45,7 @@ const exampleData = {
 // sergioCryptoJS.AES.encrypt('apikey', 'mypass').toString();
 window.sergioCryptoJS = CryptoJS;
 
-const ENCRYPTED = 'U2FsdGVkX1/Rgf7S20j5jwGfmwJMdV4S+UCfHSDaR6I5z0DQgrP82Y/FrR7zim4IV9RiSiDGTmHxQ8k+Q1uqyGfzX+WK4sF4muziEikMPBw=';
+const ENCRYPTED = 'U2FsdGVkX1+aHlqw7g9dv7sSiVx00k4Hea8q3Hpt+DomL8vJ/vAol3b2bnISF7mrch2hERdWjrR7YP2+SriaJNlCq+HK+KKY+vNaOh5NyUm9c5HVZYOeY54iXWDGjolSfU3VW/gl2u6Es8YXas9hMSaz2k/S4S2raoQ6dxtg2boVyLFz/RItH7TSC0zWznxxv6PxpX59KFgTDZ/b6eZ9RTen7y2STW6yrYzn5mHV+7KJ2RHl8ni0c5peG8ikNB6X';
 
 const inner = async (password, date) => {
     const decrypted = CryptoJS.AES.decrypt(ENCRYPTED, password);
