@@ -41,6 +41,10 @@ const exampleData = {
     ]
 };
 
+// So that we can encrypt a new apiKey if we need
+// sergioCryptoJS.AES.encrypt('apikey', 'mypass').toString();
+window.sergioCryptoJS = CryptoJS;
+
 const ENCRYPTED = 'U2FsdGVkX1/Rgf7S20j5jwGfmwJMdV4S+UCfHSDaR6I5z0DQgrP82Y/FrR7zim4IV9RiSiDGTmHxQ8k+Q1uqyGfzX+WK4sF4muziEikMPBw=';
 
 const inner = async (password, date) => {
