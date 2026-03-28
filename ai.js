@@ -87,7 +87,7 @@ ${JSON.stringify(exampleData, null, 2)}
             }
         ],
         temperature: 1,
-        max_tokens: 4000,
+        max_completion_tokens: 10000,
         top_p: 1,
         frequency_penalty: 0,
         presence_penalty: 0,
