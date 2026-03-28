@@ -61,7 +61,7 @@ const inner = async (password, date) => {
     });
 
     const response = await openai.chat.completions.create({
-        model: "gpt-4",
+        model: "gpt-5.4",
         messages: [
             {
                 "role": "system",
